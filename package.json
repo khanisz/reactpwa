@@ -5,13 +5,17 @@
   "dependencies": {
     "@material-ui/core": "^3.6.0",
     "@material-ui/icons": "^3.0.1",
+    "aframe": "^0.8.2",
+    "aframe-react": "^4.4.0",
     "google-map-react": "^1.1.2",
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.5.2",
+    "react-blur": "^0.6.0",
     "react-dom": "^16.5.2",
     "react-qr-reader": "^2.1.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "react-web-ar": "^1.0.0-beta0"
   },
   "scripts": {
     "start": "react-scripts start",
