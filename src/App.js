@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Drawer from './Drawer';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import TextComponent from './TextComponent';
 
 class App extends Component {
   render() {
@@ -28,7 +29,7 @@ function Home() {
 function About() {
   return (
     <div>
-      <h2>About</h2>
+      <TextComponent text="siema"/>
     </div>
   );
 }
