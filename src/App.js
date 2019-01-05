@@ -3,6 +3,7 @@ import './App.css';
 import Drawer from './Drawer';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import TextComponent from './TextComponent';
+import QRComponent from './QRComponent';
 
 class App extends Component {
   render() {
@@ -11,22 +12,24 @@ class App extends Component {
         <Router>
           <div>
             <Route path="/" component={Drawer} />
-            <Route path="/about" component={About} />
+            <Route path="/text" component={TextC} />
+            <Route path="/qr" component={QRC} />
+
           </div>
       </Router>
     );
   }
 }
 
-function Home() {
+function QRC() {
   return (
     <div>
-      <h2>Home</h2>
+      <QRComponent/>
     </div>
   );
 }
 
-function About() {
+function TextC() {
   return (
     <div>
       <TextComponent text="siema"/>

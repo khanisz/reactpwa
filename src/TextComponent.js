@@ -6,7 +6,7 @@ class TextComponent extends Component {
     render() {
       return (
             <div>
-                <Typography>
+                <Typography paragraph>
                     {this.props.text}
                 </Typography>
             </div>
