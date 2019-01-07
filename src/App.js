@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-// import "./App.css";
 import Drawer from "./Drawer";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import TextComponent from "./TextComponent";
 import QRComponent from "./QRComponent";
 import MapComponent from "./MapComponent";
@@ -16,10 +15,9 @@ class App extends Component {
             <Route path="/qr" component={QRComponent} />
             <Route
               path="/text2"
-              render={props => <TextComponent {...props} text="siema222" />}
+              render={props => <TextComponent {...props} text="stext22" />}
             />
             <Route path="/map" component={MapComponent} />
-            {/* <Route path="/blur" component={BlurComponent} /> */}
           </div>
         </Router>
       </div>
