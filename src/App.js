@@ -9,15 +9,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Drawer />
         <Router>
           <div>
-            <Route path="/qr" component={QRComponent} />
-            <Route
-              path="/text2"
-              render={props => <TextComponent {...props} text="stext22" />}
-            />
-            <Route path="/map" component={MapComponent} />
+            <Drawer />
+            <div>
+              <Route path="/qr" component={QRComponent} />
+              <Route
+                path="/text"
+                render={props => <TextComponent {...props} text="stext22" />}
+              />
+              <Route path="/map" component={MapComponent} />
+            </div>
           </div>
         </Router>
       </div>

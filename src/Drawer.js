@@ -17,6 +17,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import DoneIcon from "@material-ui/icons/Done";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -58,6 +59,9 @@ const styles = theme => ({
     padding: "0 8px",
     ...theme.mixins.toolbar,
     justifyContent: "flex-end"
+  },
+  headerAppBar: {
+    padding: "4px",
   },
   content: {
     flexGrow: 1,
@@ -137,20 +141,39 @@ class PersistentDrawerLeft extends React.Component {
           </div>
           <Divider />
           <List>
-            {["Etap I", "Etap II", "Etap III", "Etap IV"].map(text => (
-              <ListItem
-                button
-                key={text}
-                onClick={() => {
-                  console.log({ text });
-                }}
-              >
-                <ListItemIcon>
-                  <DoneIcon />
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
+              <Link to="/qr">
+                <ListItem
+                  button
+                  key='qr'
+                >
+                  <ListItemIcon>
+                    <DoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary='qr' />
+                </ListItem>
+              </Link>
+              <Link to="map">
+                <ListItem
+                  button
+                  key="map"
+                >
+                  <ListItemIcon>
+                    <DoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="map" />
+                </ListItem>
+              </Link>
+              <Link to="text">
+                <ListItem
+                  button
+                  key="text"
+                >
+                  <ListItemIcon>
+                    <DoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="text" />
+                </ListItem>
+              </Link>
           </List>
         </Drawer>
         <main
@@ -158,7 +181,7 @@ class PersistentDrawerLeft extends React.Component {
             [classes.contentShift]: open
           })}
         >
-          {/* <div className={classes.drawerHeader} /> */}
+          <div className={classes.headerAppBar} />
         </main>
       </div>
     );
