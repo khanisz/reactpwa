@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import MyGreatPlace from './my_great_place.jsx';
 
 class MapComponent extends Component {
   static defaultProps = {
@@ -14,18 +14,16 @@ class MapComponent extends Component {
 
   render() {
     return (
-      // Important! Always set the container height explicitly
       <div style={{ height: "95vh", width: "100%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          {/* <AnyReactComponent
-            lat={51.110662}
-            lng={17.029335}
-            text={"Kreyser Avrora"}
-          /> */}
+        
+          <MyGreatPlace lat={51.109306} lng={17.030001} text={'A'}/>
+          <MyGreatPlace lat={51.107756} lng={17.027516} text={'B'}/>
+          <MyGreatPlace lat={51.111528} lng={17.038073} text={'C'}/>
         </GoogleMapReact>
       </div>
     );
