@@ -22,17 +22,6 @@ class App extends Component {
     };
   }
 
-
-  // componentDidMount() {
-  //   this.setState({ isLoading: true });
-
-  //   fetch(URL + APPID)
-  //     .then(response => console.log(response))
-  //     .then(data => this.setState({ name: data.hits, isLoading: false }));
-  // }
-
-
-
   componentDidMount() {
     this.setState({ isLoading: true });
 
