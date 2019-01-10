@@ -4,9 +4,64 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import TextComponent from "./TextComponent";
 import QRComponent from "./QRComponent";
 import MapComponent from "./MapComponent";
+import axios from "axios";
+
+const URL = "http://localhost:3090/";
+const APPID = "5c379a026f2ab84480c96fc3";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: "Gra Miejska",
+      mapPoint: [],
+      textC: [],
+      imageC: [],
+      questionC: []
+    };
+  }
+
+
+  // componentDidMount() {
+  //   this.setState({ isLoading: true });
+
+  //   fetch(URL + APPID)
+  //     .then(response => console.log(response))
+  //     .then(data => this.setState({ name: data.hits, isLoading: false }));
+  // }
+
+
+
+  componentDidMount() {
+    this.setState({ isLoading: true });
+
+    axios
+      .get(URL + APPID)
+      .then(result =>
+        this.setState({
+          name: result.data.name,
+          mapPoint: result.data.mapPoint,
+          textC: result.data.textC,
+          imageC: result.data.imageC,
+          questionC: result.data.questionC,
+          isLoading: false
+        })
+      )
+      .catch(error =>
+        this.setState({
+          error,
+          isLoading: false
+        })
+      );
+  }
+
   render() {
+    const { name, isLoading } = this.state;
+
+    if (isLoading) {
+      return <p>Loading ...</p>;
+    }
     return (
       <div>
         <Router>
@@ -16,7 +71,7 @@ class App extends Component {
               <Route path="/qr" component={QRComponent} />
               <Route
                 path="/text"
-                render={props => <TextComponent {...props} text="stext22" />}
+                render={props => <TextComponent {...props} text={name} />}
               />
               <Route path="/map" component={MapComponent} />
             </div>
