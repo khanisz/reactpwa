@@ -5,6 +5,7 @@ import TextComponent from "./TextComponent";
 import QRComponent from "./QRComponent";
 import MapComponent from "./MapComponent";
 import axios from "axios";
+import QuestionComponent from "./QuestionComponent";
 
 const URL = "http://localhost:3090/";
 const APPID = "5c379a026f2ab84480c96fc3";
@@ -63,6 +64,7 @@ class App extends Component {
                 render={props => <TextComponent {...props} text={name} />}
               />
               <Route path="/map" component={MapComponent} />
+              <Route path="/question" component={QuestionComponent} />
             </div>
           </div>
         </Router>
