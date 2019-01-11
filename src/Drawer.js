@@ -185,6 +185,17 @@ class PersistentDrawerLeft extends React.Component {
                   <ListItemText primary="question" />
                 </ListItem>
               </Link>
+              <Link to="image">
+                <ListItem
+                  button
+                  key="image"
+                >
+                  <ListItemIcon>
+                    <DoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="image" />
+                </ListItem>
+              </Link>
           </List>
         </Drawer>
         <main

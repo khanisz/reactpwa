@@ -6,6 +6,7 @@ import QRComponent from "./QRComponent";
 import MapComponent from "./MapComponent";
 import axios from "axios";
 import QuestionComponent from "./QuestionComponent";
+import ImageComponent from "./ImageComponent";
 
 const URL = "http://localhost:3090/";
 const APPID = "5c379a026f2ab84480c96fc3";
@@ -65,6 +66,10 @@ class App extends Component {
               />
               <Route path="/map" component={MapComponent} />
               <Route path="/question" component={QuestionComponent} />
+              <Route
+                path="/image"
+                render={props => <ImageComponent {...props} url="https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG" />}
+              />
             </div>
           </div>
         </Router>
