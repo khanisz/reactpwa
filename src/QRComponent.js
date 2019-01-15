@@ -6,7 +6,7 @@ class QRComponent extends Component {
     super(props);
     this.state = {
       delay: 300,
-      result: "No result"
+      result: "Zeskanuj kod QR"
     };
     this.handleScan = this.handleScan.bind(this);
   }
