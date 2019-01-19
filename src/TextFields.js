@@ -50,7 +50,8 @@ class TextFields extends React.Component {
     name: "Cat in the Hat",
     age: "",
     multiline: "Controlled",
-    currency: "EUR"
+    currency: "EUR",
+    answered: false
   };
 
   handleChange = name => event => {
@@ -63,11 +64,18 @@ class TextFields extends React.Component {
     const { classes } = this.props;
     const { siema } = this.props;
     let texty;
-    if (this.state.name == "siema") {
+    
+    if (this.state.name=="siema"){
+      this.setState({
+        answered : true
+      })
+    }
+    if (answered) {
       texty = <div>Odpowiedź: {siema}</div>;
     } else {
       texty = <div/>;
     }
+
     return (
       <div>
         <div>
