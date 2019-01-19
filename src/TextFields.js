@@ -47,7 +47,7 @@ const currencies = [
 
 class TextFields extends React.Component {
   state = {
-    name: "Cat in the Hat",
+    name: "",
     age: "",
     multiline: "Controlled",
     currency: "EUR",
@@ -64,13 +64,11 @@ class TextFields extends React.Component {
     const { classes } = this.props;
     const { siema } = this.props;
     let texty;
-    
+
     if (this.state.name=="siema"){
-      this.setState({
-        answered : true
-      })
+      this.state.answered = true;
     }
-    if (answered) {
+    if (this.state.answered) {
       texty = <div>Odpowiedź: {siema}</div>;
     } else {
       texty = <div/>;
