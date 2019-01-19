@@ -6,12 +6,11 @@ import ImageComponent from "./ImageComponent";
 class CardComponent extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
   render() {
     const { component } = this.props;
     let card;
-    if ((component.visible == true)) {
+    if ((component.visible)) {
       if (component.type == "textC") {
         card = <TextComponent title={component.title} text={component.text} />;
       } else if (component.type == "imageC") {

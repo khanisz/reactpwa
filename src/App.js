@@ -61,7 +61,10 @@ class App extends Component {
                 exact path="/"
                 render={props => <CardListComponent {...props} components={components} />}
               />
-              <Route path="/qr" component={QRComponent} />
+              <Route
+                 path="/qr"
+                render={props => <QRComponent {...props} components={components} />}
+              />
               <Route
                 path="/text"
                 render={props => <TextComponent {...props} text={name} />}
