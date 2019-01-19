@@ -19,12 +19,10 @@ const styles = {
 
 function ImageComponent(props) {
   const { classes } = props;
-  const { url } = props;
+  const { title, text, url } = props;
   return (
     <div>
-      <div style={{height: 10}}>
-
-      </div>
+      {/* <div style={{ height: 10 }} /> */}
       <Card className={classes.card}>
         <CardActionArea>
           <CardMedia
@@ -34,15 +32,11 @@ function ImageComponent(props) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              {title}
             </Typography>
-            <Typography component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
+            <Typography component="p">{text}</Typography>
           </CardContent>
         </CardActionArea>
-        
       </Card>
     </div>
   );

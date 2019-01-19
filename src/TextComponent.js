@@ -26,7 +26,7 @@ const styles = {
 function TextComponent(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
-  const { text } = props;
+  const { title, text } = props;
 
   return (
     <Card className={classes.card}>
@@ -37,15 +37,11 @@ function TextComponent(props) {
           gutterBottom
         />
         <Typography variant="h5" component="h2">
-          {text}
+          {title}
         </Typography>
         <Typography className={classes.pos} color="textSecondary" />
         <Typography component="p">
-          Breslau, 1938 rok. Przenieście się w czasie i poznajcie największą
-          tajemnicę przedwojennego Wrocławia. Znika kobieta podejrzana o zdradę
-          oraz śledzący ją na zlecenie męża detektywi. Teraz wszystko w Waszych
-          rękach. Zanim jednak odnajdziecie trop, najpierw musicie odnaleźć
-          siebie nawzajem w podziemiach Starego Miasta...
+          {text}
         </Typography>
       </CardContent>
     </Card>

@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import TextFields from './TextFields';
+import TextFields from "./TextFields";
 
 const styles = {
   card: {
@@ -52,6 +52,8 @@ function QuestionComponent(props) {
     value = event.target.value;
   }
 
+  const { title, question, answer, resolution } = props;
+
   return (
     <Card className={classes.card}>
       <CardContent>
@@ -61,18 +63,11 @@ function QuestionComponent(props) {
           gutterBottom
         />
         <Typography variant="h5" component="h2">
-          {text}
+          {title}
         </Typography>
         <Typography className={classes.pos} color="textSecondary" />
-        <Typography component="p">
-          Breslau, 1938 rok. Przenieście się w czasie i poznajcie największą
-          tajemnicę przedwojennego Wrocławia. Znika kobieta podejrzana o zdradę
-          oraz śledzący ją na zlecenie męża detektywi. Teraz wszystko w Waszych
-          rękach. Zanim jednak odnajdziecie trop, najpierw musicie odnaleźć
-          siebie nawzajem w podziemiach Starego Miasta...
-        </Typography>
-        <TextFields siema = 'textsiema'> 
-        </TextFields>
+        <Typography component="p">{question}</Typography>
+        <TextFields answer={answer} resolution={resolution} />
       </CardContent>
     </Card>
   );

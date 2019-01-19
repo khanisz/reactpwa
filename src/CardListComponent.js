@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 import CardComponent from "./CardComponent";
 
-const cards = 'SIema';
+var cards = "...Loading";
 
 class CardListComponent extends Component {
   constructor(props) {
     super(props);
-    const { components } = props;
-    const cards = "Siema";
-    // const cards = components.map(() =>
-    //     <CardComponent>
-
-    //     </CardComponent>
-    // );
+    var { components } = props;
+    console.log(components);
+    if (components) {
+      cards = components.map((c) => <CardComponent component={c}/>);
+    }
   }
   render() {
     return <div>{cards}</div>;

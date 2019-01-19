@@ -7,10 +7,10 @@ import MapComponent from "./MapComponent";
 import axios from "axios";
 import QuestionComponent from "./QuestionComponent";
 import ImageComponent from "./ImageComponent";
-import CardListComponent from './CardListComponent';
+import CardListComponent from "./CardListComponent";
 
 const URL = "http://localhost:3090/";
-const APPID = "5c379a026f2ab84480c96fc3";
+const APPID = "5c433356f1d19840d4e49f70";
 
 class App extends Component {
   constructor(props) {
@@ -19,9 +19,7 @@ class App extends Component {
     this.state = {
       name: "Gra Miejska",
       mapPoint: [],
-      textC: [],
-      imageC: [],
-      questionC: []
+      components: []
     };
   }
 
@@ -34,9 +32,7 @@ class App extends Component {
         this.setState({
           name: result.data.name,
           mapPoint: result.data.mapPoint,
-          textC: result.data.textC,
-          imageC: result.data.imageC,
-          questionC: result.data.questionC,
+          components: result.data.components,
           isLoading: false
         })
       )
@@ -50,6 +46,7 @@ class App extends Component {
 
   render() {
     const { name, isLoading } = this.state;
+    const { components } = this.state;
 
     if (isLoading) {
       return <p>Loading ...</p>;
@@ -60,7 +57,10 @@ class App extends Component {
           <div>
             <Drawer />
             <div>
-              <Route exact path="/" component={CardListComponent}/>
+              <Route
+                exact path="/"
+                render={props => <CardListComponent {...props} components={components} />}
+              />
               <Route path="/qr" component={QRComponent} />
               <Route
                 path="/text"
@@ -70,7 +70,12 @@ class App extends Component {
               <Route path="/question" component={QuestionComponent} />
               <Route
                 path="/image"
-                render={props => <ImageComponent {...props} url="https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG" />}
+                render={props => (
+                  <ImageComponent
+                    {...props}
+                    url="https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG"
+                  />
+                )}
               />
             </div>
           </div>

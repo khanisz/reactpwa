@@ -26,25 +26,6 @@ const styles = theme => ({
   }
 });
 
-const currencies = [
-  {
-    value: "USD",
-    label: "$"
-  },
-  {
-    value: "EUR",
-    label: "€"
-  },
-  {
-    value: "BTC",
-    label: "฿"
-  },
-  {
-    value: "JPY",
-    label: "¥"
-  }
-];
-
 class TextFields extends React.Component {
   state = {
     name: "",
@@ -62,16 +43,17 @@ class TextFields extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const { siema } = this.props;
+    const { answer, resolution } = this.props;
     let texty;
-
-    if (this.state.name=="siema"){
+    console.log(this.state.answered);
+    if (this.state.name ==  answer ) {
       this.state.answered = true;
+      console.log('jest ok');
     }
     if (this.state.answered) {
-      texty = <div>Odpowiedź: {siema}</div>;
+      texty = <div>Wskazówka: {resolution}</div>;
     } else {
-      texty = <div/>;
+      texty = <div />;
     }
 
     return (
@@ -80,7 +62,7 @@ class TextFields extends React.Component {
           <form className={classes.container} noValidate autoComplete="off">
             <TextField
               id="standard-name"
-              label="Hasło"
+              label="Odpowiedź"
               className={classes.textField}
               value={this.state.name}
               onChange={this.handleChange("name")}
