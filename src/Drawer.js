@@ -141,6 +141,17 @@ class PersistentDrawerLeft extends React.Component {
           </div>
           <Divider />
           <List>
+          <Link to="/">
+                <ListItem
+                  button
+                  key='home'
+                >
+                  <ListItemIcon>
+                    <DoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary='home' />
+                </ListItem>
+              </Link>
               <Link to="/qr">
                 <ListItem
                   button
