@@ -7,6 +7,7 @@ import MapComponent from "./MapComponent";
 import axios from "axios";
 import QuestionComponent from "./QuestionComponent";
 import ImageComponent from "./ImageComponent";
+import CardListComponent from './CardListComponent';
 
 const URL = "http://localhost:3090/";
 const APPID = "5c379a026f2ab84480c96fc3";
@@ -59,7 +60,7 @@ class App extends Component {
           <div>
             <Drawer />
             <div>
-              <Route path="/" component={CardListComponent}/>
+              <Route exact path="/" component={CardListComponent}/>
               <Route path="/qr" component={QRComponent} />
               <Route
                 path="/text"
