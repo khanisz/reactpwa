@@ -59,6 +59,7 @@ class App extends Component {
           <div>
             <Drawer />
             <div>
+              <Route path="/" component={CardListComponent}/>
               <Route path="/qr" component={QRComponent} />
               <Route
                 path="/text"
