@@ -144,12 +144,12 @@ class PersistentDrawerLeft extends React.Component {
           <Link to="/">
                 <ListItem
                   button
-                  key='home'
+                  key='Dziennik'
                 >
                   <ListItemIcon>
                     <DoneIcon />
                   </ListItemIcon>
-                  <ListItemText primary='home' />
+                  <ListItemText primary='Dziennik' />
                 </ListItem>
               </Link>
               <Link to="/qr">
@@ -160,7 +160,7 @@ class PersistentDrawerLeft extends React.Component {
                   <ListItemIcon>
                     <DoneIcon />
                   </ListItemIcon>
-                  <ListItemText primary='qr' />
+                  <ListItemText primary='Skanowanie QR' />
                 </ListItem>
               </Link>
               <Link to="map">
@@ -171,42 +171,10 @@ class PersistentDrawerLeft extends React.Component {
                   <ListItemIcon>
                     <DoneIcon />
                   </ListItemIcon>
-                  <ListItemText primary="map" />
+                  <ListItemText primary="Mapa" />
                 </ListItem>
               </Link>
-              <Link to="text">
-                <ListItem
-                  button
-                  key="text"
-                >
-                  <ListItemIcon>
-                    <DoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="text" />
-                </ListItem>
-              </Link>
-              <Link to="question">
-                <ListItem
-                  button
-                  key="question"
-                >
-                  <ListItemIcon>
-                    <DoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="question" />
-                </ListItem>
-              </Link>
-              <Link to="image">
-                <ListItem
-                  button
-                  key="image"
-                >
-                  <ListItemIcon>
-                    <DoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="image" />
-                </ListItem>
-              </Link>
+            
           </List>
         </Drawer>
         <main
