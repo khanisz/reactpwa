@@ -1,13 +1,24 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
-
 import MyGreatPlace from "./my_great_place.jsx";
 
+var points = "...Loading";
+
 class MapComponent extends Component {
+  constructor(props) {
+    super(props);
+    var { mapPoint } = props;
+    if (mapPoint) {
+      points = mapPoint.map(c => (
+        <MyGreatPlace lat={c.lat} lng={c.lng} text={c.name} />
+      ));
+    }
+  }
+
   static defaultProps = {
     center: {
-      lat: 51.11,
-      lng: 17.0
+      lat: 51.110479,
+      lng: 17.033256
     },
     zoom: 14
   };
@@ -20,9 +31,7 @@ class MapComponent extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <MyGreatPlace lat={51.109306} lng={17.030001} text={"1"} />
-          <MyGreatPlace lat={51.107756} lng={17.027516} text={"2"} />
-          <MyGreatPlace lat={51.111528} lng={17.038073} text={"3"} />
+          {points}
         </GoogleMapReact>
       </div>
     );

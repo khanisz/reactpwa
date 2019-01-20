@@ -7,7 +7,6 @@ class CardListComponent extends Component {
   constructor(props) {
     super(props);
     var { components } = props;
-    console.log(components);
     if (components) {
       cards = components.map((c) => <CardComponent component={c}/>);
     }

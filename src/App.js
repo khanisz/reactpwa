@@ -46,7 +46,7 @@ class App extends Component {
 
   render() {
     const { name, isLoading } = this.state;
-    const { components } = this.state;
+    const { components, mapPoint } = this.state;
 
     if (isLoading) {
       return <p>Loading ...</p>;
@@ -69,7 +69,10 @@ class App extends Component {
                 path="/text"
                 render={props => <TextComponent {...props} text={name} />}
               />
-              <Route path="/map" component={MapComponent} />
+              <Route
+                path="/map"
+                render={props => <MapComponent {...props} mapPoint={mapPoint}/>}
+                />
               <Route path="/question" component={QuestionComponent} />
               <Route
                 path="/image"
