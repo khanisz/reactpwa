@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapComponent should render correctly in "debug" mode 1`] = `
+<div
+  style={
+    Object {
+      "height": "91vh",
+      "width": "100%",
+    }
+  }
+>
+  <GoogleMap
+    bootstrapURLKeys={
+      Object {
+        "key": "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ",
+      }
+    }
+    debounced={true}
+    defaultCenter={
+      Object {
+        "lat": 51.110479,
+        "lng": 17.033256,
+      }
+    }
+    defaultZoom={14}
+    distanceToMouse={[Function]}
+    googleMapLoader={[Function]}
+    heatmap={Object {}}
+    heatmapLibrary={false}
+    hoverDistance={30}
+    layerTypes={Array []}
+    options={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+    yesIWantToUseGoogleMapApiInternals={false}
+  >
+    ...Loading
+  </GoogleMap>
+</div>
+`;
+
+exports[`MapComponent should render correctly with 0 map Points 1`] = `
+<div
+  style={
+    Object {
+      "height": "91vh",
+      "width": "100%",
+    }
+  }
+>
+  <GoogleMap
+    bootstrapURLKeys={
+      Object {
+        "key": "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ",
+      }
+    }
+    debounced={true}
+    defaultCenter={
+      Object {
+        "lat": 51.110479,
+        "lng": 17.033256,
+      }
+    }
+    defaultZoom={14}
+    distanceToMouse={[Function]}
+    googleMapLoader={[Function]}
+    heatmap={Object {}}
+    heatmapLibrary={false}
+    hoverDistance={30}
+    layerTypes={Array []}
+    options={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+    yesIWantToUseGoogleMapApiInternals={false}
+  />
+</div>
+`;
+
+exports[`MapComponent should render correctly with 1 map Point 1`] = `
+<div
+  style={
+    Object {
+      "height": "91vh",
+      "width": "100%",
+    }
+  }
+>
+  <GoogleMap
+    bootstrapURLKeys={
+      Object {
+        "key": "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ",
+      }
+    }
+    debounced={true}
+    defaultCenter={
+      Object {
+        "lat": 51.110479,
+        "lng": 17.033256,
+      }
+    }
+    defaultZoom={14}
+    distanceToMouse={[Function]}
+    googleMapLoader={[Function]}
+    heatmap={Object {}}
+    heatmapLibrary={false}
+    hoverDistance={30}
+    layerTypes={Array []}
+    options={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+    yesIWantToUseGoogleMapApiInternals={false}
+  >
+    <MyGreatPlace
+      lat={51.109306}
+      lng={17.030001}
+      text="1"
+    />
+  </GoogleMap>
+</div>
+`;
+
+exports[`MapComponent should render correctly with 2 map Points 1`] = `
+<div
+  style={
+    Object {
+      "height": "91vh",
+      "width": "100%",
+    }
+  }
+>
+  <GoogleMap
+    bootstrapURLKeys={
+      Object {
+        "key": "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ",
+      }
+    }
+    debounced={true}
+    defaultCenter={
+      Object {
+        "lat": 51.110479,
+        "lng": 17.033256,
+      }
+    }
+    defaultZoom={14}
+    distanceToMouse={[Function]}
+    googleMapLoader={[Function]}
+    heatmap={Object {}}
+    heatmapLibrary={false}
+    hoverDistance={30}
+    layerTypes={Array []}
+    options={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+    yesIWantToUseGoogleMapApiInternals={false}
+  >
+    <MyGreatPlace
+      lat={51.109306}
+      lng={17.030001}
+      text="1"
+    />
+    <MyGreatPlace
+      lat={51.107756}
+      lng={17.027516}
+      text="2"
+    />
+  </GoogleMap>
+</div>
+`;
+
+exports[`MapComponent should render correctly with 3 map Points 1`] = `
+<div
+  style={
+    Object {
+      "height": "91vh",
+      "width": "100%",
+    }
+  }
+>
+  <GoogleMap
+    bootstrapURLKeys={
+      Object {
+        "key": "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ",
+      }
+    }
+    debounced={true}
+    defaultCenter={
+      Object {
+        "lat": 51.110479,
+        "lng": 17.033256,
+      }
+    }
+    defaultZoom={14}
+    distanceToMouse={[Function]}
+    googleMapLoader={[Function]}
+    heatmap={Object {}}
+    heatmapLibrary={false}
+    hoverDistance={30}
+    layerTypes={Array []}
+    options={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+    yesIWantToUseGoogleMapApiInternals={false}
+  >
+    <MyGreatPlace
+      lat={51.109306}
+      lng={17.030001}
+      text="1"
+    />
+    <MyGreatPlace
+      lat={51.107756}
+      lng={17.027516}
+      text="2"
+    />
+    <MyGreatPlace
+      lat={51.111528}
+      lng={17.038073}
+      text="3"
+    />
+  </GoogleMap>
+</div>
+`;
+
+exports[`MapComponent should render correctly with no props 1`] = `
+<div
+  style={
+    Object {
+      "height": "91vh",
+      "width": "100%",
+    }
+  }
+>
+  <GoogleMap
+    bootstrapURLKeys={
+      Object {
+        "key": "AIzaSyAN_7EdSgJsXIE-2z87T-mz3hIDH-S9GjQ",
+      }
+    }
+    debounced={true}
+    defaultCenter={
+      Object {
+        "lat": 51.110479,
+        "lng": 17.033256,
+      }
+    }
+    defaultZoom={14}
+    distanceToMouse={[Function]}
+    googleMapLoader={[Function]}
+    heatmap={Object {}}
+    heatmapLibrary={false}
+    hoverDistance={30}
+    layerTypes={Array []}
+    options={[Function]}
+    style={
+      Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+    yesIWantToUseGoogleMapApiInternals={false}
+  >
+    ...Loading
+  </GoogleMap>
+</div>
+`;

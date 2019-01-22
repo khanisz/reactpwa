@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QRComponent should render correctly in "debug" mode 1`] = `
+<div>
+  <Reader
+    constraints={null}
+    delay={300}
+    facingMode="environment"
+    onError={[Function]}
+    onScan={[Function]}
+    resolution={600}
+    showViewFinder={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <p>
+    Zeskanuj kod QR
+  </p>
+</div>
+`;
+
+exports[`QRComponent should render correctly with no props 1`] = `
+<div>
+  <Reader
+    constraints={null}
+    delay={300}
+    facingMode="environment"
+    onError={[Function]}
+    onScan={[Function]}
+    resolution={600}
+    showViewFinder={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <p>
+    Zeskanuj kod QR
+  </p>
+</div>
+`;

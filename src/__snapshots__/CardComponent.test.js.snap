@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent should render correctly in "debug" mode 1`] = `
+<div>
+  ...Loading
+</div>
+`;
+
+exports[`CardComponent should render correctly with image components 1`] = `
+<div>
+  ...Loading
+</div>
+`;
+
+exports[`CardComponent should render correctly with no props 1`] = `
+<div>
+  ...Loading
+</div>
+`;
+
+exports[`CardComponent should render correctly with question components 1`] = `
+<div>
+  ...Loading
+</div>
+`;
+
+exports[`CardComponent should render correctly with text components 1`] = `
+<div>
+  ...Loading
+</div>
+`;

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageComponent should render correctly in "debug" mode 1`] = `
+<ImageComponent
+  classes={
+    Object {
+      "card": "ImageComponent-card-1",
+      "media": "ImageComponent-media-2",
+    }
+  }
+  debug={true}
+/>
+`;
+
+exports[`ImageComponent should render correctly with no props 1`] = `
+<ImageComponent
+  classes={
+    Object {
+      "card": "ImageComponent-card-1",
+      "media": "ImageComponent-media-2",
+    }
+  }
+/>
+`;
+
+exports[`ImageComponent should render correctly with text 1`] = `
+<ImageComponent
+  classes={
+    Object {
+      "card": "ImageComponent-card-1",
+      "media": "ImageComponent-media-2",
+    }
+  }
+  text="Lore ipsum"
+/>
+`;
+
+exports[`ImageComponent should render correctly with title 1`] = `
+<ImageComponent
+  classes={
+    Object {
+      "card": "ImageComponent-card-1",
+      "media": "ImageComponent-media-2",
+    }
+  }
+  title="Tytul"
+/>
+`;
+
+exports[`ImageComponent should render correctly with title and text 1`] = `
+<ImageComponent
+  classes={
+    Object {
+      "card": "ImageComponent-card-1",
+      "media": "ImageComponent-media-2",
+    }
+  }
+  text="Lore ipsum"
+  title="Tytul"
+/>
+`;
+
+exports[`ImageComponent should render correctly with title, text, url 1`] = `
+<ImageComponent
+  classes={
+    Object {
+      "card": "ImageComponent-card-1",
+      "media": "ImageComponent-media-2",
+    }
+  }
+  text="Lore ipsum"
+  title="Tytul"
+  url="url"
+/>
+`;

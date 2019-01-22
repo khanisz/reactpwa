@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardListComponent should render correctly in "debug" mode 1`] = `
+<div>
+  ...Loading
+</div>
+`;
+
+exports[`CardListComponent should render correctly with 0 components 1`] = `<div />`;
+
+exports[`CardListComponent should render correctly with 1 components 1`] = `
+<div>
+  <CardComponent
+    component={
+      Object {
+        "position": 1,
+        "text": "Breslau, 1938 rok. Przedmieście. Brutalnie zamordowano oficera.",
+        "title": "Morderstwo",
+        "type": "textC",
+        "visible": true,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`CardListComponent should render correctly with 2 components 1`] = `
+<div>
+  <CardComponent
+    component={
+      Object {
+        "position": 1,
+        "text": "Breslau, 1938 rok. Przedmieście. Brutalnie zamordowano oficera.",
+        "title": "Morderstwo",
+        "type": "textC",
+        "visible": true,
+      }
+    }
+  />
+  <CardComponent
+    component={
+      Object {
+        "position": 2,
+        "text": "W pobliskiej kawiarni czeka żona zmarłego. Posiada ona kluczowe informacje o morderstwie.",
+        "title": "Kawiarnia",
+        "type": "imageC",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-s/09/54/12/8e/old-cafe.jpg",
+        "visible": true,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`CardListComponent should render correctly with 3 components 1`] = `
+<div>
+  <CardComponent
+    component={
+      Object {
+        "position": 1,
+        "text": "Breslau, 1938 rok. Przedmieście. Brutalnie zamordowano oficera.",
+        "title": "Morderstwo",
+        "type": "textC",
+        "visible": true,
+      }
+    }
+  />
+  <CardComponent
+    component={
+      Object {
+        "position": 2,
+        "text": "W pobliskiej kawiarni czeka żona zmarłego. Posiada ona kluczowe informacje o morderstwie.",
+        "title": "Kawiarnia",
+        "type": "imageC",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-s/09/54/12/8e/old-cafe.jpg",
+        "visible": true,
+      }
+    }
+  />
+  <CardComponent
+    component={
+      Object {
+        "position": 3,
+        "text": "Na miejscu widać ofiarę leżącą w pokoju. To najpewniej liczne rany kłute doprowadziły ją do tego stanu.",
+        "title": "Miejsce zbrodni",
+        "type": "imageC",
+        "url": "https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU5MTY4OTAyMTUxMDIyMjI5/5_dp263790.jpg",
+        "visible": false,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`CardListComponent should render correctly with 4 different components 1`] = `
+<div>
+  <CardComponent
+    component={
+      Object {
+        "position": 1,
+        "text": "Breslau, 1938 rok. Przedmieście. Brutalnie zamordowano oficera.",
+        "title": "Morderstwo",
+        "type": "textC",
+        "visible": true,
+      }
+    }
+  />
+  <CardComponent
+    component={
+      Object {
+        "position": 2,
+        "text": "W pobliskiej kawiarni czeka żona zmarłego. Posiada ona kluczowe informacje o morderstwie.",
+        "title": "Kawiarnia",
+        "type": "imageC",
+        "url": "https://media-cdn.tripadvisor.com/media/photo-s/09/54/12/8e/old-cafe.jpg",
+        "visible": true,
+      }
+    }
+  />
+  <CardComponent
+    component={
+      Object {
+        "position": 3,
+        "text": "Na miejscu widać ofiarę leżącą w pokoju. To najpewniej liczne rany kłute doprowadziły ją do tego stanu.",
+        "title": "Miejsce zbrodni",
+        "type": "imageC",
+        "url": "https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU5MTY4OTAyMTUxMDIyMjI5/5_dp263790.jpg",
+        "visible": false,
+      }
+    }
+  />
+  <CardComponent
+    component={
+      Object {
+        "answer": "sztylet",
+        "position": 4,
+        "question": "Jakiej broni użyto?",
+        "resolution": "Tylko Anna oraz Tomasz mieli dostęp do narzędzia zbrodni.",
+        "title": "Narzędzie zbrodni",
+        "type": "questionC",
+        "visible": false,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`CardListComponent should render correctly with no props 1`] = `
+<div>
+  ...Loading
+</div>
+`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextComponent should render correctly in "debug" mode 1`] = `
+<TextComponent
+  classes={
+    Object {
+      "bullet": "TextComponent-bullet-2",
+      "card": "TextComponent-card-1",
+      "pos": "TextComponent-pos-4",
+      "title": "TextComponent-title-3",
+    }
+  }
+  debug={true}
+/>
+`;
+
+exports[`TextComponent should render correctly with no props 1`] = `
+<TextComponent
+  classes={
+    Object {
+      "bullet": "TextComponent-bullet-2",
+      "card": "TextComponent-card-1",
+      "pos": "TextComponent-pos-4",
+      "title": "TextComponent-title-3",
+    }
+  }
+/>
+`;
+
+exports[`TextComponent should render correctly with text 1`] = `
+<TextComponent
+  classes={
+    Object {
+      "bullet": "TextComponent-bullet-2",
+      "card": "TextComponent-card-1",
+      "pos": "TextComponent-pos-4",
+      "title": "TextComponent-title-3",
+    }
+  }
+  text="Lore ipsum"
+/>
+`;
+
+exports[`TextComponent should render correctly with title 1`] = `
+<TextComponent
+  classes={
+    Object {
+      "bullet": "TextComponent-bullet-2",
+      "card": "TextComponent-card-1",
+      "pos": "TextComponent-pos-4",
+      "title": "TextComponent-title-3",
+    }
+  }
+  title="Tytul"
+/>
+`;
+
+exports[`TextComponent should render correctly with title and text 1`] = `
+<TextComponent
+  classes={
+    Object {
+      "bullet": "TextComponent-bullet-2",
+      "card": "TextComponent-card-1",
+      "pos": "TextComponent-pos-4",
+      "title": "TextComponent-title-3",
+    }
+  }
+  text="Lore ipsum"
+  title="Tytul"
+/>
+`;

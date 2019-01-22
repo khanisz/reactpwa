@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextComponent should render correctly in "debug" mode 1`] = `
+<QuestionComponent
+  classes={
+    Object {
+      "bullet": "QuestionComponent-bullet-2",
+      "card": "QuestionComponent-card-1",
+      "container": "QuestionComponent-container-5",
+      "dense": "QuestionComponent-dense-7",
+      "menu": "QuestionComponent-menu-8",
+      "pos": "QuestionComponent-pos-4",
+      "textField": "QuestionComponent-textField-6",
+      "title": "QuestionComponent-title-3",
+    }
+  }
+  debug={true}
+/>
+`;
+
+exports[`TextComponent should render correctly with answer 1`] = `
+<QuestionComponent
+  answer="Tytul"
+  classes={
+    Object {
+      "bullet": "QuestionComponent-bullet-2",
+      "card": "QuestionComponent-card-1",
+      "container": "QuestionComponent-container-5",
+      "dense": "QuestionComponent-dense-7",
+      "menu": "QuestionComponent-menu-8",
+      "pos": "QuestionComponent-pos-4",
+      "textField": "QuestionComponent-textField-6",
+      "title": "QuestionComponent-title-3",
+    }
+  }
+/>
+`;
+
+exports[`TextComponent should render correctly with no props 1`] = `
+<QuestionComponent
+  classes={
+    Object {
+      "bullet": "QuestionComponent-bullet-2",
+      "card": "QuestionComponent-card-1",
+      "container": "QuestionComponent-container-5",
+      "dense": "QuestionComponent-dense-7",
+      "menu": "QuestionComponent-menu-8",
+      "pos": "QuestionComponent-pos-4",
+      "textField": "QuestionComponent-textField-6",
+      "title": "QuestionComponent-title-3",
+    }
+  }
+/>
+`;
+
+exports[`TextComponent should render correctly with question, answer 1`] = `
+<QuestionComponent
+  answer="Tytul"
+  classes={
+    Object {
+      "bullet": "QuestionComponent-bullet-2",
+      "card": "QuestionComponent-card-1",
+      "container": "QuestionComponent-container-5",
+      "dense": "QuestionComponent-dense-7",
+      "menu": "QuestionComponent-menu-8",
+      "pos": "QuestionComponent-pos-4",
+      "textField": "QuestionComponent-textField-6",
+      "title": "QuestionComponent-title-3",
+    }
+  }
+  question="Pytanie"
+/>
+`;
+
+exports[`TextComponent should render correctly with question, answer, resolution 1`] = `
+<QuestionComponent
+  answer="Tytul"
+  classes={
+    Object {
+      "bullet": "QuestionComponent-bullet-2",
+      "card": "QuestionComponent-card-1",
+      "container": "QuestionComponent-container-5",
+      "dense": "QuestionComponent-dense-7",
+      "menu": "QuestionComponent-menu-8",
+      "pos": "QuestionComponent-pos-4",
+      "textField": "QuestionComponent-textField-6",
+      "title": "QuestionComponent-title-3",
+    }
+  }
+  question="Pytanie"
+  resolution="Lore ipsum"
+/>
+`;
+
+exports[`TextComponent should render correctly with resolution 1`] = `
+<QuestionComponent
+  classes={
+    Object {
+      "bullet": "QuestionComponent-bullet-2",
+      "card": "QuestionComponent-card-1",
+      "container": "QuestionComponent-container-5",
+      "dense": "QuestionComponent-dense-7",
+      "menu": "QuestionComponent-menu-8",
+      "pos": "QuestionComponent-pos-4",
+      "textField": "QuestionComponent-textField-6",
+      "title": "QuestionComponent-title-3",
+    }
+  }
+  resolution="Lore ipsum"
+/>
+`;
