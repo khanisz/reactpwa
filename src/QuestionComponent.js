@@ -9,7 +9,8 @@ import TextFields from "./TextFields";
 const styles = {
   card: {
     minWidth: 275,
-    margin: 10
+    margin: 10,
+    maxWidth: 450
   },
   bullet: {
     display: "inline-block",

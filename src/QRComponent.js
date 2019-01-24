@@ -5,22 +5,33 @@ class QRComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      delay: 300,
+      delay: 1000,
       result: "Zeskanuj kod QR",
+      scanCorrect: true
     };
     this.handleScan = this.handleScan.bind(this);
   }
   handleScan(number) {
-    var component = this.props.components[number];
-    if (component) {
-      component.visible = true;
-    }
-    
+
     if (number) {
-      this.setState({
-        result: "Zeskanowano pomyślnie. Pojawił się nowy wpis w dzienniku"
-      });
+      var array = this.props.components.filter(c => c.position == number);
+      if (array.length == 0) {
+        this.setState({
+          result: "Nie ma karty o takim kodzie",
+          scanCorrect : true
+        });
+      }
     }
+
+    this.props.components.filter(c => c.position == number).forEach(c => {
+      c.visible = true;
+      this.setState({
+        result: "Zeskanowano pomyślnie. Pojawił się nowy wpis w dzienniku",
+        scanCorrect : true
+      });
+    })
+    
+
   }
   handleError(err) {
     console.error(err);

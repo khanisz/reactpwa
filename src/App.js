@@ -58,22 +58,29 @@ class App extends Component {
             <Drawer />
             <div>
               <Route
-                exact path="/"
-                render={props => <CardListComponent {...props} components={components} />}
+                exact
+                path="/"
+                render={props => (
+                  <CardListComponent {...props} components={components} />
+                )}
               />
               <Route
-                 path="/qr"
-                render={props => <QRComponent {...props} components={components} />}
+                path="/qr"
+                render={props => (
+                  <QRComponent {...props} components={components} />
+                )}
               />
-              <Route
+              {/* <Route
                 path="/text"
                 render={props => <TextComponent {...props} text={name} />}
-              />
+              /> */}
               <Route
                 path="/map"
-                render={props => <MapComponent {...props} mapPoint={mapPoint}/>}
-                />
-              <Route path="/question" component={QuestionComponent} />
+                render={props => (
+                  <MapComponent {...props} mapPoint={mapPoint} />
+                )}
+              />
+              {/* <Route path="/question" component={QuestionComponent} />
               <Route
                 path="/image"
                 render={props => (
@@ -81,8 +88,8 @@ class App extends Component {
                     {...props}
                     url="https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG"
                   />
-                )}
-              />
+                )} */}
+              {/* /> */}
             </div>
           </div>
         </Router>
